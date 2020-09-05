@@ -31,8 +31,8 @@ public class PromotionEngineTest {
 		items.add(SKU.B);
 		items.add(SKU.C);
 		Order order = new Order(1, items);
-		int price = promotionEngine.getPriceAfterDiscount(order);
-		assertEquals(100, price);
+		int discountedPrice = promotionEngine.getPriceAfterDiscount(order);
+		assertEquals(100, discountedPrice);
 	}
 	
 	@Test
@@ -50,8 +50,8 @@ public class PromotionEngineTest {
 		items.add(SKU.B);
 		items.add(SKU.C);
 		Order order = new Order(2, items);
-		int price = promotionEngine.getPriceAfterDiscount(order);
-		assertEquals(370, price);
+		int discountedPrice = promotionEngine.getPriceAfterDiscount(order);
+		assertEquals(370, discountedPrice);
 	}
 	
 	@Test
@@ -68,8 +68,8 @@ public class PromotionEngineTest {
 		items.add(SKU.C);
 		items.add(SKU.D);
 		Order order = new Order(1, items);
-		int price = promotionEngine.getPriceAfterDiscount(order);
-		assertEquals(280, price);
+		int discountedPrice = promotionEngine.getPriceAfterDiscount(order);
+		assertEquals(280, discountedPrice);
 	}
 	
 	

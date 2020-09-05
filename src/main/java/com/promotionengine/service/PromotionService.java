@@ -10,7 +10,7 @@ import com.promotionengine.promotions.Promotion3;
 
 public class PromotionService {
 
-	private static final List<Promotion> PROMOTIONS;
+	public static final List<Promotion> PROMOTIONS;
 	
 	// initial promotions to apply
 	static {
@@ -20,7 +20,7 @@ public class PromotionService {
 		PROMOTIONS.add(new Promotion3());
 	}
 	
-	// To add promotions in future
+	// To add new promotions in future
 	public void addPromotions(Promotion promo) {
 		PROMOTIONS.add(promo);
 	} 
