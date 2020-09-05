@@ -9,5 +9,8 @@ public enum SKU {
 		this.price = price;
 	}
 	
+	public int getPrice() {
+		return price;
+	}
 }
 

@@ -7,6 +7,8 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 
+import com.promotionengine.model.Order;
+
 public class PromotionEngineTest {
 	
 	@InjectMocks
